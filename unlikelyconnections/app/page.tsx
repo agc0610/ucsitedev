@@ -1,5 +1,7 @@
 import Image from "next/image";
-import styles from '@/app/home.module.css'; 
+//import styles from '@/app/home.module.css'; 
+import { lusitana } from '@/app/fonts';
+import { inter } from '@/app/fonts'; 
 
 export default function Home() {
   return (
@@ -70,7 +72,7 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
+          <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             Learn about Next.js in an interactive course with&nbsp;quizzes!
           </p>
         </a>
